@@ -6,18 +6,18 @@ import android.os.Bundle
 import java.util.*
 import kotlin.concurrent.schedule
 
-class MainActivity : AppCompatActivity() {
+class TelaGodOfWar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tela3)
 
-        Timer().schedule(5000){abrirProximaTela()}
+        Timer().schedule(2000){abrirMain()}
     }
 
-    private fun abrirProximaTela() {
-        val intent = Intent(this, TelaGodOfWar::class.java)
+    private fun abrirMain() {
+
+        val intent = Intent(this, TelaDescricao::class.java)
         startActivity(intent)
         finish()
     }
-
 }

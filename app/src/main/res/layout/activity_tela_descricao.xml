@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaDescricao"
+    android:background="@color/fundo">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:cardCornerRadius="40dp"
+        android:id="@+id/imagemPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias=".05">
+        <ImageView
+
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/imagem"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        app:layout_constraintStart_toStartOf="@id/imagemPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        android:text="View Game"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/turretroadbold"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardCornerRadius="50dp"
+        android:background="#424657"
+        app:layout_constraintStart_toStartOf="@id/texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.8"
+
+        >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/vector"
+            android:background="#424657"
+         />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imagemPrincipal"
+        android:layout_width="320dp"
+        android:layout_height="280dp"
+        app:layout_constraintStart_toStartOf="@id/imagemPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.2"
+        >
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="280dp"
+            android:src="@drawable/godbanner"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="God of War: Ascension"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:fontFamily="@font/turretroadbold"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="This prequel to the very first game in the God of War series and the seventh game in the franchise. It is exclusive for the Sony PlayStation 3 console. The game still uses the ancient Greek mythology as visual inspiration and the primary story source.
+        The player takes control over the warrior Kratos. At the beginning of the game, the protagonist was imprisoned after he violated the blood oath given to the god of war Ares. One of the three goddesses of revenge Megera tortures Kratos, but he manages to break free and start the path to revenge on the gods of Olympus.
+        Kratos still uses the dual Blade of Chaos. They can be improved, but this is not the only weapon in the game: other weapons are available for purchase thanks to the new World Weapons mechanics. The gameplay is no different from the other games of the series: the player still needs to connect the attacks in combos and arrange hack and slash mayhem. This is the only game in the series, in which multiplayer is available for eight people: the main task is to seize control of the card and get a reward from the gods."
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.8"
+            app:layout_constraintHorizontal_bias="0.2"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:fontFamily="@font/turretroadbold"
+            />
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/nitendo"
+        app:layout_constraintStart_toStartOf="@id/imagemPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/windows"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.15"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/android"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.25"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:background="@color/botao"
+        android:text="Watch"
+        android:textColor="@color/white"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

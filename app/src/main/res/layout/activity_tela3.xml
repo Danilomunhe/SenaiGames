@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaGodOfWar"
+    android:background="@color/fundo">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:cardCornerRadius="40dp"
+        android:id="@+id/imagemPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias=".05">
+        <ImageView
+
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/imagem"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="31dp"
+        android:background="@color/card"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="@id/imagemPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintHorizontal_bias=".56"
+        android:text="   Search..."
+        android:textColor="@color/fundo"
+        android:drawableRight="@drawable/search"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@id/imagemPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/card1"
+        app:layout_constraintVertical_bias=".45"
+        app:layout_constraintHorizontal_bias=".09">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/godrack"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17.8sp"
+            android:textAlignment="center"
+            android:text="God of War Ragnarok"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:fontFamily="@font/turretroadbold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@id/card3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/card2"
+        app:layout_constraintVertical_bias=".45"
+        app:layout_constraintHorizontal_bias=".8"
+        android:fontFamily="@font/turretroadbold">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/godghost"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17.8sp"
+            android:textAlignment="center"
+            android:text="God of War:  Ghost of Sparta"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@id/imagemPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/card3"
+        app:layout_constraintVertical_bias=".8"
+        app:layout_constraintHorizontal_bias=".09">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/godorigins"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17.8sp"
+            android:textAlignment="center"
+            android:text="God of War: Origins Collection"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:fontFamily="@font/turretroadbold"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@id/card5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/card4"
+        app:layout_constraintVertical_bias=".8"
+        app:layout_constraintHorizontal_bias=".8">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/godghost"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17.8sp"
+            android:textAlignment="center"
+            android:text="God of War: Ghost of Sparta"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:fontFamily="@font/turretroadbold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@id/imagemPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imagemPerfil"
+        app:layout_constraintVertical_bias=".15"
+        app:layout_constraintHorizontal_bias=".09">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/god"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17.8dp"
+            android:text="God of War (2005)"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:fontFamily="@font/turretroadbold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="@id/card1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintHorizontal_bias=".8">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/godascencion"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17.8sp"
+            android:textAlignment="center"
+            android:text="God of War Ascencion"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="1"
+            android:fontFamily="@font/turretroadbold"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,21 +7,31 @@
     tools:context=".MainActivity"
     android:background="@color/fundo">
 
-    <ImageView
-        android:id="@+id/imagemPerfil"
+
+    <androidx.cardview.widget.CardView
         android:layout_width="42dp"
         android:layout_height="42dp"
-        android:src="@drawable/ic_launcher_background"
-        android:background="@drawable/imagem"
+        app:cardCornerRadius="40dp"
+        android:id="@+id/imagemPerfil"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05"
-        app:layout_constraintHorizontal_bias=".05"/>
+        app:layout_constraintHorizontal_bias=".05">
+        <ImageView
+
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/imagem"
+            />
+
+
+    </androidx.cardview.widget.CardView>
 
     <EditText
-        android:layout_width="190dp"
+        android:layout_width="260dp"
         android:layout_height="31dp"
         android:background="@color/card"
         tools:ignore="MissingConstraints"
@@ -30,7 +40,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06"
-        app:layout_constraintHorizontal_bias=".46"
+        app:layout_constraintHorizontal_bias=".56"
+        android:text="   Search..."
+        android:textColor="@color/fundo"
+        android:drawableRight="@drawable/search"
         />
 
     <TextView
